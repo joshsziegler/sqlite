@@ -42,7 +42,6 @@ jobs:
               run: |
                   sudo apt update -y # Update APT cache for next install step
                   sudo apt install -y libreadline-dev libncurses-dev # Required for tab-completion in CLI
-                  # Create dist directory for the resulting binary
                   mkdir dist
                   gcc \
                     -DHAVE_READLINE \
