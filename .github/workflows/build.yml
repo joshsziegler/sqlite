@@ -45,11 +45,8 @@ jobs:
                   sudo apt install -y libreadline-dev libncurses-dev # Required for tab-completion in CLI
                   # Install the shared library into /usr/local/lib and CLI into /usr/local/bin
                   mkdir -p dist
-                  cd src/
-                  ./configure --prefix=../dist
-                  make install
-                  cd ../dist
-                  chmod +x sqlite3
+                  cd src/ && ./configure --prefix=../dist && make install
+                  chmod +x dist/sqlite3
 
             #- name: Compile sources
             #  run: |
