@@ -70,7 +70,7 @@ jobs:
               uses: svenstaro/upload-release-action@v2
               with:
                   repo_token: ${{ secrets.GITHUB_TOKEN }}
-                  file: dist/sqlite3
+                  file: dist/sqlite3-ubuntu
                   asset_name: sqlite3-ubuntu
                   tag: ${{ github.ref }}
 
